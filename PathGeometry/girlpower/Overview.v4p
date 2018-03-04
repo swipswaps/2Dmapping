@@ -1,0 +1,167 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+   <PATCH nodename="C:\dev\vvvv\PathGeometry\girlpower\Overview.v4p" filename="C:\dev\vvvv\PathGeometry\DemoAll (2D.Geometry).v4p" locked="0" systemname="DemoAll (2D.Geometry)">
+   <BOUNDS height="8535" left="3615" top="3615" type="Window" width="13815">
+   </BOUNDS>
+   <NODE componentmode="Hidden" filename="plugins\2D.GeometryChange\2D.GeometryChange.csproj" id="171" nodename="Change (2D.Geometry)" systemname="Change (2D.Geometry)">
+   <BOUNDS height="100" left="3810" top="6615" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3810" top="6615" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="InABox" id="185" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="300" top="240" type="Node" width="750">
+   </BOUNDS>
+   <BOUNDS height="1005" left="300" top="240" type="Box" width="7845">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|Nodes with Helpfiles|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="33">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="186" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="345" top="4380" type="Node" width="750">
+   </BOUNDS>
+   <BOUNDS height="1005" left="345" top="4380" type="Box" width="9810">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" encoded="0" values="|Nodes without Helpfiles|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="33">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="modules\Mesh (2D.Geometry).v4p" id="158" nodename="Mesh (2D.Geometry)" systemname="Mesh (2D.Geometry)">
+   <BOUNDS height="100" left="8115" top="1680" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="8115" top="1680" type="Box">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5580" top="6375" width="9000" height="7680">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="plugins\2D.GeometryPath\2D.GeometryPath.csproj" id="180" nodename="Path (2D.Geometry)" systemname="Path (2D.Geometry)">
+   <BOUNDS height="100" left="390" top="1680" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="390" top="1680" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="PathLayer (2D.Geometry)" filename="modules\PathLayer (2D.Geometry).v4p" nodename="PathLayer (2D.Geometry)" componentmode="Hidden" id="188">
+   <BOUNDS type="Node" left="8130" top="2280" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <PACK Name="addonpack" Version="34.101.0">
+   </PACK>
+   <NODE systemname="TesselatePolygon (EX9.Geometry)" filename="%VVVV%\packs\PathGeometry\nodes\plugins\EX9.GeometryTesselatePolygon\EX9.GeometryTesselatePolygon.csproj" nodename="TesselatePolygon (EX9.Geometry)" componentmode="Hidden" id="189">
+   <BOUNDS type="Node" left="6120" top="5700" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="FrameDelay (2D.Geometry)" filename="%VVVV%\packs\PathGeometry\nodes\modules\FrameDelay (2D.Geometry).v4p" nodename="FrameDelay (2D.Geometry)" componentmode="Hidden" id="190">
+   <BOUNDS type="Node" left="6135" top="6165" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Unify (2D.Geometry Spectral)" filename="..\nodes\plugins\Spectral2D.GeometryUnify\Spectral2D.GeometryUnify.csproj" nodename="Unify (2D.Geometry Spectral)" componentmode="Hidden" id="191">
+   <BOUNDS type="Node" left="2130" top="2790" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryXOR\2D.GeometryXOR.csproj" id="184" nodename="XOR (2D.Geometry)" systemname="XOR (2D.Geometry)">
+   <BOUNDS height="100" left="2130" top="3390" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2130" top="3390" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryRectangle\2D.GeometryRectangle.csproj" id="167" nodename="Rectangle (2D.Geometry)" systemname="Rectangle (2D.Geometry)">
+   <BOUNDS height="100" left="390" top="6165" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="390" top="6165" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryEllipse\2D.GeometryEllipse.csproj" id="166" nodename="Ellipse (2D.Geometry)" systemname="Ellipse (2D.Geometry)">
+   <BOUNDS height="270" left="390" top="6615" type="Node" width="750">
+   </BOUNDS>
+   <BOUNDS left="390" top="6615" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryIntersect\2D.GeometryIntersect.csproj" id="178" nodename="Intersect (2D.Geometry)" systemname="Intersect (2D.Geometry)">
+   <BOUNDS height="100" left="2130" top="2235" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2130" top="2235" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryGetSlice\2D.GeometryGetSlice.csproj" id="170" nodename="GetSlice (2D.Geometry)" systemname="GetSlice (2D.Geometry)">
+   <BOUNDS height="100" left="3810" top="5715" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3810" top="5715" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometrySelect\2D.GeometrySelect.csproj" id="169" nodename="Select (2D.Geometry)" systemname="Select (2D.Geometry)">
+   <BOUNDS height="100" left="3810" top="6165" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3810" top="6165" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryGroup\2D.GeometryGroup.csproj" id="168" nodename="Group (2D.Geometry)" systemname="Group (2D.Geometry)">
+   <BOUNDS height="100" left="390" top="5715" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="390" top="5715" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryQueue\2D.GeometryQueue.csproj" id="181" nodename="Queue (2D.Geometry)" systemname="Queue (2D.Geometry)">
+   <BOUNDS height="100" left="3810" top="3390" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3810" top="3390" type="Box">
+   </BOUNDS>
+   <BOUNDS height="11085" left="10230" top="960" type="Window" width="8640">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryS+H\2D.GeometryS+H.csproj" id="182" nodename="S+H (2D.Geometry)" systemname="S+H (2D.Geometry)">
+   <BOUNDS height="100" left="3810" top="2865" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3810" top="2865" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryBounds\2D.GeometryBounds.csproj" id="175" nodename="Bounds (2D.Geometry)" systemname="Bounds (2D.Geometry)">
+   <BOUNDS height="100" left="3810" top="2235" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3810" top="2235" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryArea\2D.GeometryArea.csproj" id="174" nodename="Area (2D.Geometry)" systemname="Area (2D.Geometry)">
+   <BOUNDS height="100" left="3810" top="1680" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3810" top="1680" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.Geometry-\2D.Geometry-.csproj" id="163" nodename="- (2D.Geometry)" systemname="- (2D.Geometry)">
+   <BOUNDS height="100" left="2130" top="1680" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2130" top="1680" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryContainsPoint\2D.GeometryContainsPoint.csproj" id="177" nodename="ContainsPoint (2D.Geometry)" systemname="ContainsPoint (2D.Geometry)">
+   <BOUNDS height="100" left="5655" top="2865" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="5655" top="2865" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryContains\2D.GeometryContains.csproj" id="176" nodename="Contains (2D.Geometry)" systemname="Contains (2D.Geometry)">
+   <BOUNDS height="270" left="5655" top="2235" type="Node" width="915">
+   </BOUNDS>
+   <BOUNDS left="5655" top="2235" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\nodes\plugins\2D.GeometryPathContainsPoint\2D.GeometryPathContainsPoint.csproj" id="173" nodename="PathContainsPoint (2D.Geometry)" systemname="PathContainsPoint (2D.Geometry)">
+   <BOUNDS height="100" left="5655" top="1680" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="5655" top="1680" type="Box">
+   </BOUNDS>
+   </NODE>
+   <PACK Name="vvvv-Message" Version="2.8.6">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.0">
+   </PACK>
+   </PATCH>

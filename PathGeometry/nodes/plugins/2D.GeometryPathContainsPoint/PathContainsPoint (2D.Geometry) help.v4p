@@ -1,0 +1,317 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+   <PATCH nodename="C:\dev\vvvv\PathGeometry\nodes\plugins\2D.GeometryPathContainsPoint\PathContainsPoint (2D.Geometry) help.v4p" filename="C:\dev\vvvv\PathGeometry\plugins\2D.GeometryPathContainsPoint\PathContainsPoint (2D.Geometry) help.v4p" locked="0" systemname="PathContainsPoint (2D.Geometry) help">
+   <BOUNDS height="12825" left="1815" top="630" type="Window" width="9405">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="151" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="100" left="270" top="6450" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="5055" left="270" top="6450" type="Box" width="8310">
+   </BOUNDS>
+   <BOUNDS height="7770" left="15075" top="0" type="Window" width="9210">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\..\modules\Mesh (2D.Geometry).v4p" id="152" nodename="Mesh (2D.Geometry)" systemname="Mesh (2D.Geometry)">
+   <BOUNDS height="100" left="420" top="4605" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Apply" visible="1">
+   </PIN>
+   <BOUNDS height="7680" left="10620" top="7005" type="Window" width="9000">
+   </BOUNDS>
+   <BOUNDS left="420" top="4605" type="Box">
+   </BOUNDS>
+   <PIN pinname="Reset" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="176" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <BOUNDS height="100" left="1515" top="4755" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\assets\maxim_dalton_1680x1050.JPG">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\effects\PhongDirectional.fx" id="178" nodename="PhongDirectional (EX9.Effect)" systemname="PhongDirectional (EX9.Effect)">
+   <BOUNDS height="100" left="255" top="5355" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Ambient Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Diffuse Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Specular Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="178" dstpinname="Mesh" srcnodeid="152" srcpinname="Mesh">
+   </LINK>
+   <NODE componentmode="InABox" id="180" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="3660" top="345" type="Node" width="1005">
+   </BOUNDS>
+   <BOUNDS height="705" left="3660" top="345" type="Box" width="5235">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="PathContainsPoint">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="27">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="181" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="3660" top="1185" type="Node" width="1005">
+   </BOUNDS>
+   <BOUNDS height="585" left="3660" top="1185" type="Box" width="2385">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Checks if a 2D-Point is on the outline of a pathgeometry|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="" id="197" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="270" left="270" top="5955" type="Node" width="7935">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="151" dstpinname="Layers" srcnodeid="197" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="197" dstpinname="Layer 1" srcnodeid="178" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="210" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
+   <BOUNDS height="100" left="2880" top="2985" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="2880" top="2985" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="213" nodename="Vector (2d Join)" systemname="Vector (2d Join)">
+   <BOUNDS height="100" left="420" top="1230" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="214" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
+   <BOUNDS height="100" left="540" top="195" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="540" top="195" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" values="-0.5,0.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="213" dstpinname="X" srcnodeid="214" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="218" nodename="Map (Value)" systemname="Map (Value)">
+   <BOUNDS height="100" left="2880" top="3570" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.23">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.8">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="218" dstpinname="Input" srcnodeid="210" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="219" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
+   <BOUNDS height="100" left="2880" top="4500" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="2880" top="4500" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="178" dstpinname="Alpha" srcnodeid="219" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="220" nodename="Damper (Animation)" systemname="Damper (Animation)">
+   <BOUNDS height="100" left="2880" top="3990" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="220" dstpinname="Go To Position" srcnodeid="218" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="219" dstpinname="Y Input Value" srcnodeid="220" srcpinname="Position Out">
+   </LINK>
+   <LINK dstnodeid="178" dstpinname="Texture" srcnodeid="176" srcpinname="Texture Out">
+   </LINK>
+   <NODE componentmode="Hidden" filename="..\2D.GeometryEllipse\2D.GeometryEllipse.csproj" id="184" nodename="Ellipse (2D.Geometry)" systemname="Ellipse (2D.Geometry)">
+   <BOUNDS height="100" left="375" top="1905" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   <PIN pinname="Resolution" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Radius 2" slicecount="1" values="0.719999999999999">
+   </PIN>
+   <PIN pinname="Radius 1" slicecount="1" values="0.609999999999999">
+   </PIN>
+   <PIN pinname="Width">
+   </PIN>
+   <PIN pinname="Height">
+   </PIN>
+   <PIN pinname="CenterXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="152" dstpinname="Path" srcnodeid="184" srcpinname="Path">
+   </LINK>
+   <LINK dstnodeid="184" dstpinname="CenterXY" srcnodeid="213" srcpinname="XY">
+   </LINK>
+   <NODE componentmode="Hidden" id="221" nodename="Blend (EX9.RenderState)" systemname="Blend (EX9.RenderState)">
+   <BOUNDS height="100" left="195" top="3915" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="Draw Mode" slicecount="1" values="Add">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="178" dstpinname="Render State" srcnodeid="221" srcpinname="Render State Out">
+   </LINK>
+   <NODE componentmode="Hidden" filename="2D.GeometryPathContainsPoint.csproj" id="207" nodename="PathContainsPoint (2D.Geometry)" systemname="PathContainsPoint (2D.Geometry)">
+   <BOUNDS height="100" left="2880" top="2550" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="PointXY" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS left="2880" top="2550" type="Box">
+   </BOUNDS>
+   <PIN pinname="Tolerance" slicecount="1" values="0.12">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="210" dstpinname="Y Input Value" srcnodeid="207" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="207" dstpinname="Input" srcnodeid="184" srcpinname="Path">
+   </LINK>
+   <NODE id="201" componentmode="Hidden" nodename="Mouse (Devices Window)" systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" height="100" left="5565" top="1890" width="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Left Button" visible="1">
+   </PIN>
+   <PIN pinname="Right Button" visible="1">
+   </PIN>
+   <PIN pinname="Device" visible="1">
+   </PIN>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\modules\EX9\Cursor (DX9).v4p" id="208" nodename="Cursor (DX9)" systemname="Cursor (DX9 Legacy 2)">
+   <BOUNDS height="100" left="5520" top="4935" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Point Size" slicecount="3" visible="1" values="0.02,0.02,0.02">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mouse XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   <PIN pinname="Cursor Type" slicecount="1" values="|Left Top|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="197" dstpinname="Layer 3" srcnodeid="208" srcpinname="Layer">
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="Device" dstnodeid="208" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="PositionXY" dstnodeid="207" dstpinname="PointXY">
+   </LINK>
+   <PACK Name="addonpack" Version="34.101.0">
+   </PACK>
+   <NODE componentmode="Hidden" filename="%VVVV%\packs\PathGeometry\nodes\modules\PathLayer (2D.Geometry).v4p" id="222" nodename="PathLayer (2D.Geometry)" systemname="PathLayer (2D.Geometry)">
+   <BOUNDS height="100" left="2895" top="5355" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="6000" left="15345" top="5655" type="Window" width="9000">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   <PIN pinname="Show" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS left="2895" top="5355" type="Box">
+   </BOUNDS>
+   <PIN pinname="Width" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|0.44900,0.44900,0.44900,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="184" srcpinname="Path" dstnodeid="222" dstpinname="Path">
+   </LINK>
+   <LINK srcnodeid="222" srcpinname="Layer" dstnodeid="197" dstpinname="Layer 2">
+   </LINK>
+   <PACK Name="vvvv-Message" Version="2.8.6">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.0">
+   </PACK>
+   </PATCH>

@@ -1,0 +1,179 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\joreg\Desktop\vvvvs\vvvv_45beta34.1_x86\packs\PathGeometry\nodes\plugins\2D.GeometryArea\Area (2D.Geometry) help.v4p" filename="C:\dev\vvvv\PathGeometry\Area (2D.Geometry) help.v4p" locked="0" systemname="Area (2D.Geometry) help">
+   <BOUNDS height="11085" left="1245" top="1530" type="Window" width="8640">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="151" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="100" left="105" top="5160" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="5340" left="105" top="5160" type="Box" width="7770">
+   </BOUNDS>
+   <BOUNDS height="7770" left="15075" top="0" type="Window" width="9210">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="modules\Mesh (2D.Geometry).v4p" id="152" nodename="Mesh (2D.Geometry)" systemname="Mesh (2D.Geometry)">
+   <BOUNDS height="100" left="285" top="3975" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Apply" visible="1">
+   </PIN>
+   <BOUNDS height="7680" left="10620" top="7005" type="Window" width="9000">
+   </BOUNDS>
+   <BOUNDS left="285" top="3975" type="Box">
+   </BOUNDS>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="176" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <BOUNDS height="100" left="1380" top="3975" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\assets\maxim_dalton_1680x1050.JPG">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\effects\PhongDirectional.fx" id="178" nodename="PhongDirectional (EX9.Effect)" systemname="PhongDirectional (EX9.Effect)">
+   <BOUNDS height="100" left="120" top="4725" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Ambient Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Render State" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="178" dstpinname="Mesh" srcnodeid="152" srcpinname="Mesh">
+   </LINK>
+   <LINK dstnodeid="178" dstpinname="Texture" srcnodeid="176" srcpinname="Texture Out">
+   </LINK>
+   <NODE componentmode="InABox" id="180" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="4395" top="360" type="Node" width="1005">
+   </BOUNDS>
+   <BOUNDS height="735" left="4395" top="360" type="Box" width="3510">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="Area">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="27">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="181" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="4395" top="1200" type="Node" width="1005">
+   </BOUNDS>
+   <BOUNDS height="2250" left="4395" top="1200" type="Box" width="2250">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Calculates the Area inside a PathGeometry|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="plugins\2D.GeometryEllipse\2D.GeometryEllipse.csproj" id="183" nodename="Ellipse (2D.Geometry)" systemname="Ellipse (2D.Geometry)">
+   <BOUNDS height="100" left="285" top="1530" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   <PIN pinname="Resolution" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="CenterXY" visible="1">
+   </PIN>
+   <PIN pinname="Radius 1" slicecount="1" values="0.68">
+   </PIN>
+   <PIN pinname="Radius 2" slicecount="1" values="0.74">
+   </PIN>
+   <BOUNDS left="285" top="1530" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="plugins\2D.GeometryRectangle\2D.GeometryRectangle.csproj" id="184" nodename="Rectangle (2D.Geometry)" systemname="Rectangle (2D.Geometry)">
+   <BOUNDS height="100" left="1770" top="1170" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   <PIN pinname="Resolution" slicecount="1" values="8.17000000000001">
+   </PIN>
+   <PIN pinname="Radius 1" slicecount="1" values="0.2">
+   </PIN>
+   <PIN pinname="Radius 2" slicecount="1" values="0.29">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.87">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="0.48">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="186" nodename="LFO (Animation)" systemname="LFO (Animation)">
+   <BOUNDS height="100" left="285" top="315" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="187" nodename="Map (Value)" systemname="Map (Value)">
+   <BOUNDS height="100" left="285" top="960" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="187" dstpinname="Input" srcnodeid="186" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="183" dstpinname="CenterXY" srcnodeid="187" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="Hidden" filename="plugins\2D.GeometryIntersect\2D.GeometryIntersect.csproj" id="185" nodename="Intersect (2D.Geometry)" systemname="Intersect (2D.Geometry)">
+   <BOUNDS height="100" left="285" top="2580" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS left="285" top="2580" type="Box">
+   </BOUNDS>
+   </NODE>
+   <LINK dstnodeid="185" dstpinname="Input 1" srcnodeid="183" srcpinname="Path">
+   </LINK>
+   <LINK dstnodeid="185" dstpinname="Input 2" srcnodeid="184" srcpinname="Path">
+   </LINK>
+   <LINK dstnodeid="152" dstpinname="Path" srcnodeid="185" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="151" dstpinname="Layers" srcnodeid="178" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" filename="plugins\2D.GeometryArea\2D.GeometryArea.csproj" id="195" nodename="Area (2D.Geometry)" systemname="Area (2D.Geometry)">
+   <BOUNDS height="100" left="1845" top="3075" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   <PIN pinname="Area" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="195" dstpinname="Path" srcnodeid="185" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="178" dstpinname="Alpha" srcnodeid="195" srcpinname="Area">
+   </LINK>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   </PATCH>
